@@ -1,2 +1,2 @@
 #include <stdbool.h>
-bool confirmar(Usuario_t);
+bool confirmar(Usuario_t u);

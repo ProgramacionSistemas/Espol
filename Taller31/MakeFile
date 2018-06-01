@@ -1,0 +1,15 @@
+
+newuser: confirmar.o validar.o main.o
+	gcc -O -o newuser confirmar.o validar.o main.o
+	
+confirmar.o: confirmar.c
+    gcc -O -c confirmar.c
+	
+main.o: main.c
+    gcc -O -c main.c 
+	
+validar.o: validar.c
+    gcc -O -c validar.c     
+
+clean: 
+        	rm newuser main.o validar.o confirmar.o
